@@ -6,7 +6,7 @@ theme = 'PaperMod'
     enabled = true
     title = "DGPC"
     subtitle = "Data Guardian & Performance Consulting"
-    imageUrl = "https://github.com/Danielpe10.png" # Grabs your GitHub pic
+    imageUrl = "logo.png" # Grabs your GitHub pic
     [[params.profileMode.buttons]]
         name = "Blog"
         url = "posts"
