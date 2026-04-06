@@ -1,0 +1,4 @@
+baseURL = 'https://dgpconsult.com/'
+languageCode = 'en-us'
+title = 'DGPC - Data Guardian & Performance Consulting'
+theme = 'PaperMod'
