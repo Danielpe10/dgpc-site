@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://dgpconsult.com/</loc>
     <lastmod>2026-04-06T12:17:16-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/my-first-post/</loc>
+    <loc>https://dgpconsult.com/posts/my-first-post/</loc>
     <lastmod>2026-04-06T12:17:16-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://dgpconsult.com/posts/</loc>
     <lastmod>2026-04-06T12:17:16-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ai/</loc>
+    <loc>https://dgpconsult.com/tags/ai/</loc>
     <lastmod>2026-03-06T10:00:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://dgpconsult.com/categories/</loc>
     <lastmod>2026-03-06T10:00:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/cloud-computing/</loc>
+    <loc>https://dgpconsult.com/tags/cloud-computing/</loc>
     <lastmod>2026-03-06T10:00:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/consulting/</loc>
+    <loc>https://dgpconsult.com/categories/consulting/</loc>
     <lastmod>2026-03-06T10:00:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/depin/</loc>
+    <loc>https://dgpconsult.com/tags/depin/</loc>
     <lastmod>2026-03-06T10:00:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/gpu-infrastructure-move-to-the-edge-part-1/</loc>
+    <loc>https://dgpconsult.com/posts/gpu-infrastructure-move-to-the-edge-part-1/</loc>
     <lastmod>2026-03-06T10:00:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/infrastructure/</loc>
+    <loc>https://dgpconsult.com/tags/infrastructure/</loc>
     <lastmod>2026-03-06T10:00:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://dgpconsult.com/tags/</loc>
     <lastmod>2026-03-06T10:00:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/tech-trends/</loc>
+    <loc>https://dgpconsult.com/categories/tech-trends/</loc>
     <lastmod>2026-03-06T10:00:00-05:00</lastmod>
   </url>
 </urlset>
