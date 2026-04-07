@@ -2,20 +2,44 @@ baseURL = 'https://dgpconsult.com/'
 languageCode = 'en-us'
 title = 'DGPC - Data Guardian & Performance Consulting'
 theme = 'PaperMod'
-[params.profileMode]
-    enabled = true
+
+[params]
+    env = "production"
     title = "DGPC"
-    subtitle = "Data Guardian & Performance Consulting"
-    imageUrl = "logo2.png" 
-    [[params.profileMode.buttons]]
-        name = "Blog"
-        url = "posts"
-    [[params.profileMode.buttons]]
-        name = "LinkedIn"
+    description = "Data Guardian & Performance Consulting - Data Architecture and AI Strategy"
+    author = "Daniel Peña Chaves"
+    
+    # This enables the custom CSS file to fix the centering of your logo
+    customCSS = ["css/custom.css"]
+
+    [params.profileMode]
+        enabled = true
+        title = "DGPC"
+        subtitle = "Data Guardian & Performance Consulting"
+        imageUrl = "images/logo2.png"
+        imageWidth = 150  # Increased slightly so the detail is visible
+        imageHeight = 150
+        # Buttons removed to keep it to 3 clean lines
+
+    # Line 3: Your Social Icon Row
+
+    [[params.socialIcons]]
+        name = "rss"  # This icon represents your Blog/Feed
+        url = "/posts"
+
+    [[params.socialIcons]]
+        name = "linkedin"
         url = "https://www.linkedin.com/in/daniel-gustavo-pe%C3%B1a-chaves-dgpc/"
-[[params.socialIcons]]
-    name = "github"
-    url = "https://github.com/Danielpe10"
-[[params.socialIcons]]
-    name = "linkedin"
-    url = "https://www.linkedin.com/in/daniel-gustavo-pe%C3%B1a-chaves-dgpc/"
+    
+    [[params.socialIcons]]
+        name = "email"
+        url = "mailto:daniel.pena.chaves@dgpconsult.com" # Update this to your preferred email
+
+    [[params.socialIcons]]
+        name = "github"
+        url = "https://github.com/Danielpe10"
+    
+
+[menu]
+    # If you want a navigation bar at the top, you can add it here. 
+    # Otherwise, leave it empty for that minimalist landing page look.
