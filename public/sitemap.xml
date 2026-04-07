@@ -11,8 +11,31 @@
     <loc>http://localhost:1313/posts/</loc>
     <lastmod>2026-04-06T12:17:16-05:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/ai/</loc>
+    <lastmod>2026-03-06T10:00:00-05:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-03-06T10:00:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/cloud-computing/</loc>
+    <lastmod>2026-03-06T10:00:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/consulting/</loc>
+    <lastmod>2026-03-06T10:00:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/depin/</loc>
+    <lastmod>2026-03-06T10:00:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/gpu-infrastructure-move-to-the-edge-part-1/</loc>
+    <lastmod>2026-03-06T10:00:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/infrastructure/</loc>
+    <lastmod>2026-03-06T10:00:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-03-06T10:00:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/tech-trends/</loc>
+    <lastmod>2026-03-06T10:00:00-05:00</lastmod>
   </url>
 </urlset>

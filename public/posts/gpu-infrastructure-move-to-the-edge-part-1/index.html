@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>GPU Infrastructure Will Move to the Edge (Part 1) | DGPC - Data Guardian &amp; Performance Consulting</title>
+<meta name="keywords" content="AI, Cloud Computing, Infrastructure, DePIN">
+<meta name="description" content="By 2030, data centers are projected to require $6.7 trillion worldwide in capital expenditures yet this bet is hitting reality checks">
+<meta name="author" content="Daniel Peña Chaves">
+<link rel="canonical" href="http://localhost:1313/posts/gpu-infrastructure-move-to-the-edge-part-1/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.199042e659bc7245f5609d333d6c044eb554a0640849bb874e1dff8eb0f57209.css" integrity="sha256-GZBC5lm8ckX1YJ0zPWwETrVUoGQISbuHTh3/jrD1cgk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/gpu-infrastructure-move-to-the-edge-part-1/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="DGPC - Data Guardian &amp; Performance Consulting (Alt + H)">DGPC - Data Guardian &amp; Performance Consulting</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      GPU Infrastructure Will Move to the Edge (Part 1)
+    </h1>
+    <div class="post-description">
+      By 2030, data centers are projected to require $6.7 trillion worldwide in capital expenditures yet this bet is hitting reality checks
+    </div>
+    <div class="post-meta"><span title='2026-03-06 10:00:00 -0500 -05'>March 6, 2026</span>&nbsp;·&nbsp;<span>Daniel Peña Chaves</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>By the time of writing this, we are two years into the largest infrastructure spending cycle in the history of the technology industry — nearly $700 billion committed in 2026 alone, <em>much of it borrowed against future revenues that don’t yet exist.</em></p>
+<p>Amazon Web Services (AWS) launched in 2006 with a simple premise: instead of every company buying and maintaining its own servers, they could rent compute from a shared pool, on demand. The economics were compelling. A data center running at 80% utilization is dramatically more efficient than thousands of corporate server rooms limping along at 15%. Centralization meant shared cooling, shared power infrastructure, shared security, shared staffing — and the savings compounded with scale.</p>
+<p>By late 2025, the three dominant players — <strong>AWS, Microsoft Azure, and Google Cloud — controlled roughly two-thirds of global cloud infrastructure services spending, cementing their grip on the market.</strong> What they built works . For most enterprise workloads — databases, web applications, storage, analytics — centralized cloud remains the most cost-effective, reliable, and secure option available.</p>
+<p>Yet the centralized cloud was engineered for predictable, enterprise workloads — not the relentless, always-on demand of frontier AI training and inference. What once scaled with elegant efficiency is now colliding with physics, geography, and geopolitics in ways the original architects never anticipated.</p>
+<p><img alt="BIG-5 Combined Capex Trajectory" loading="lazy" src="/images/posts/big5.png"></p>
+<!-- raw HTML omitted -->
+<p>We are effectively living the “AI arms race”. The chart above captures the trajectory: combined Big-5 capex rocketing from hundreds of billions toward trillions, with AI claiming ~75% of the pie and projections showing no slowdown in sight.</p>
+<p>Amazon staring down negative free cash flow, Alphabet turning to century-long bonds, Meta plowing $115–135 billion into AI infrastructure this year — a staggering 60–90% jump from last year’s spend — Microsoft dropping a record $80 billion in a single fiscal year, while Oracle sprints to catch up.</p>
+<p><strong>And it still won’t be enough.</strong></p>
+<p>By 2030, data centers are projected to require $6.7 trillion worldwide in capital expenditures — with $5.2 trillion dedicated specifically to AI-ready infrastructure. <strong>That’s more than Germany’s GDP</strong> (~$5.1 trillion in 2026 projections), crammed into five years of frantic building.</p>
+<p>However the $6.7 trillion infrastructure bet is already running into walls no amount of capital can move.</p>
+<h3 id="what-ai-ready-infrastructure-actually-means">What “AI-Ready” Infrastructure Actually Means<a hidden class="anchor" aria-hidden="true" href="#what-ai-ready-infrastructure-actually-means">#</a></h3>
+<p>Training a frontier AI model requires thousands of GPUs running in tight coordination, connected by ultra-high-bandwidth interconnects that transfer data between chips so fast they make the best fiber connections look almost like dial-up in comparison.</p>
+<p>The density of compute in a single AI rack generates so much heat that traditional air cooling — the default for decades — is no longer sufficient. Modern AI facilities require direct liquid cooling: water or dielectric fluid running through or across the chips themselves.</p>
+<p>A standard server rack consumes 5–15 kilowatts. A dense GPU cluster rack can draw 60–120 kW. Scale that across a 100-megawatt campus, and you have a facility that consumes as much electricity as a city — continuously, not at peak.</p>
+<p>The cost of training reflects this too. A medium-sized model (7–13B parameters) can be trained for $1,000–$10,000. A large model at 70B+ parameters exceeds $300,000 while frontier models cost millions. And all these ranges keep increasing as newer models become more complex.</p>
+<p>Press enter or click to view image in full size</p>
+<p>Nearly 100 GW of new data centers will be added between 2026 and 2030, doubling global capacity. <strong>But communities increasingly don’t want them</strong>. The combination of power consumption, water usage, and minimal local employment creates perfect conditions for NIMBY — Not In My Backyard — opposition.</p>
+<h2 id="power-water-and-geography">Power, Water, and Geography<a hidden class="anchor" aria-hidden="true" href="#power-water-and-geography">#</a></h2>
+<p><img alt="AI Data Centers Share of US Electricity Grid" loading="lazy" src="/images/posts/shareus.png"></p>
+<!-- raw HTML omitted -->
+<p>In 2023, data centers consumed 26% of Virginia’s total electricity supply, with significant shares in North Dakota (15%), Nebraska (12%), Iowa (11%) and Oregon (11%). These aren’t abstract grid statistics or projections. They translate directly into higher bills for everyone nearby — it’s expected that U.S. households could see electricity costs rise 8% by 2030 on average, exceeding 25% in the most affected markets.</p>
+<p>Power is only part of the story. Data centers consumed approximately 17 billion gallons of water for cooling in 2023 alone — and <strong>that figure is projected to double or quadruple by 2028</strong>. Not industrial wastewater. Potable water. The same water that comes out of household taps and irrigates crops in some regions that are already water-stressed.</p>
+<p><img alt="Estimated Water Consumption" loading="lazy" src="/images/posts/watercons.png"></p>
+<!-- raw HTML omitted -->
+<h2 id="when-infrastructure-becomes-a-target">When Infrastructure Becomes a Target<a hidden class="anchor" aria-hidden="true" href="#when-infrastructure-becomes-a-target">#</a></h2>
+<p>On March 2nd, 2026, Iranian drone strikes hit three Amazon Web Services facilities in the Middle East — two in the UAE directly struck, one in Bahrain damaged by a nearby impact. Structural damage, power disruptions, and water damage from fire suppression knocked all three facilities offline. Banking apps, payments platforms, and enterprise software providers across the region went down with them.</p>
+<p><img alt="Capital Committed to Middle East Cloud" loading="lazy" src="/images/posts/caprisk.png"></p>
+<!-- raw HTML omitted -->
+<p>These were the first known military strikes on a physical cloud infrastructure. <strong>As AI becomes more central to military and government operations, the facilities running it become high-value targets</strong>. The more critical the infrastructure, the more attractive it becomes to strike.</p>
+<p>The internet was architected to route around damage. The hyperscale AI buildout is doing the opposite: concentrating critical compute into fewer, larger, more identifiable locations. The bigger the campus, the bigger the target.</p>
+<h2 id="a-system-under-stress">A System Under Stress<a hidden class="anchor" aria-hidden="true" href="#a-system-under-stress">#</a></h2>
+<p>The centralized cloud model worked brilliantly when compute demand was linear and predictable. <em>But AI has changed the equation — and the cracks are showing.</em></p>
+<p>Power grid capacity, water supplies, and community opposition are creating 24–72 month delays on new facilities.</p>
+<p>The majority of global AI compute runs through a handful of metros — Northern Virginia, Frankfurt, Singapore, Dublin, Tokyo. Lose one to a grid failure, a natural disaster, or a conflict — as the attacks on AWS just demonstrated — and entire regions lose access overnight.</p>
+<p>The economics are breaking for everyone except the biggest players. Compute now consumes 50–70% of an AI startup’s budget before a single dollar goes to talent, sales, or operations. Startups aren’t negotiating on price — they’re negotiating for access.</p>
+<h2 id="the-infrastructure-that-already-exists">The Infrastructure That Already Exists<a hidden class="anchor" aria-hidden="true" href="#the-infrastructure-that-already-exists">#</a></h2>
+<p>While hyperscalers continue pouring concrete into ever-larger campuses, a parallel infrastructure is quietly taking shape — one that doesn’t require new power plants, rezoned land, or multi-year construction timelines. It draws from what already exists: millions of underutilized GPUs sitting in data centers, research labs, gaming rigs, and enterprise servers around the world.</p>
+<p>This is Decentralized Physical Infrastructure (DePIN) — a system that coordinates idle hardware into on-demand clusters capable of training models, running inference, and rendering at scale.</p>
+<p>This shift isn’t theoretical. By early 2026, networks like Render, io.net, and Akash have demonstrated real traction. Render continues to process millions of frames monthly while expanding into AI workloads; io.net aggregates thousands of verified GPUs across dozens of countries for cluster-ready AI tasks; Akash offers a decentralized marketplace where developers deploy models directly onto global hardware at fractions of hyperscaler prices.</p>
+<p>What makes this viable at scale comes down to three interlocking pieces: architecture that treats the planet as a single, elastic supercomputer; verification systems that cryptographically attest hardware specs and output integrity; and job matching economics that function like real-time auctions, aligning idle resources toward the highest-value work.</p>
+<p>The hyperscale race is meeting its natural limits. Meanwhile, DePIN is assembling the alternative from hardware that’s already online — turning excess capacity into the next layer of AI infrastructure. The edge isn’t coming. It’s already here.</p>
+<p>In the next article, we’ll explore how DePIN works — the architecture, verification systems, job matching economics, and real-world deployments that make distributed GPU compute possible.</p>
+<h1 id="sources">Sources<a hidden class="anchor" aria-hidden="true" href="#sources">#</a></h1>
+<p><em>Infrastructure &amp; Capex</em></p>
+<p>McKinsey &amp; Company (April 2025): “The Cost of Compute: A $7 Trillion Race to Scale Data Centers” <a href="https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-cost-of-compute-a-7-trillion-dollar-race-to-scale-data-centers">https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-cost-of-compute-a-7-trillion-dollar-race-to-scale-data-centers</a></p>
+<p>McKinsey &amp; Company (October 2025): “Beyond Compute: Infrastructure that Powers and Cools AI Data Centers” <a href="https://www.mckinsey.com/industries/industrials/our-insights/beyond-compute-infrastructure-that-powers-and-cools-ai-data-centers">https://www.mckinsey.com/industries/industrials/our-insights/beyond-compute-infrastructure-that-powers-and-cools-ai-data-centers</a></p>
+<p>CNBC (January 2025): “Microsoft expects to spend $80 billion on AI-enabled data centers in fiscal 2025” <a href="https://www.cnbc.com/2025/01/03/microsoft-expects-to-spend-80-billion-on-ai-data-centers-in-fy-2025.html">https://www.cnbc.com/2025/01/03/microsoft-expects-to-spend-80-billion-on-ai-data-centers-in-fy-2025.html</a></p>
+<p>CNBC (February 2026): “Tech AI spending approaches $700 billion in 2026, cash taking big hit” <a href="https://www.cnbc.com/2026/02/06/google-microsoft-meta-amazon-ai-cash.html">https://www.cnbc.com/2026/02/06/google-microsoft-meta-amazon-ai-cash.html</a></p>
+<p>Futurum Group (February 2026): “AI Capex 2026: The $690B Infrastructure Sprint” <a href="https://futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/">https://futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/</a></p>
+<p>Fortune (February 2026): “Big Tech approaches ‘red flag’ moment: AI capex is so great hyperscalers could go cash-flow negative” <a href="https://fortune.com/2026/02/17/ai-tech-red-flag-capex-hyperscalers-cash-flow-negative-evercore/">https://fortune.com/2026/02/17/ai-tech-red-flag-capex-hyperscalers-cash-flow-negative-evercore/</a></p>
+<p>Fortune (December 2025): “Oracle slides by most since January on mounting AI spending” <a href="https://fortune.com/2025/12/11/oracle-earnings-stock-falls-11-percent-why-investors-disappointed-data-centers-cloud/">https://fortune.com/2025/12/11/oracle-earnings-stock-falls-11-percent-why-investors-disappointed-data-centers-cloud/</a></p>
+<p>Data Centre Magazine (October 2025): “Oracle’s Data Centre Strategy: Cloud, AI and More Capacity” <a href="https://datacentremagazine.com/news/oracles-data-centre-strategy-cloud-ai-and-more-capacity">https://datacentremagazine.com/news/oracles-data-centre-strategy-cloud-ai-and-more-capacity</a></p>
+<p>IEEE ComSoc Technology Blog (December 2025): “Hyperscaler capex &gt; $600bn in 2026, a 36% increase over 2025” <a href="https://techblog.comsoc.org/2025/12/22/hyperscaler-capex-600-bn-in-2026-a-36-increase-over-2025-while-global-spending-on-cloud-infrastructure-services-skyrockets/">https://techblog.comsoc.org/2025/12/22/hyperscaler-capex-600-bn-in-2026-a-36-increase-over-2025-while-global-spending-on-cloud-infrastructure-services-skyrockets/</a></p>
+<p>TechCrunch (February 2026): “The billion-dollar infrastructure deals powering the AI boom” <a href="https://techcrunch.com/2026/02/28/billion-dollar-infrastructure-deals-ai-boom-data-centers-openai-oracle-nvidia-microsoft-google-meta/">https://techcrunch.com/2026/02/28/billion-dollar-infrastructure-deals-ai-boom-data-centers-openai-oracle-nvidia-microsoft-google-meta/</a></p>
+<p><em>Power &amp; Water</em></p>
+<p>Goldman Sachs (February 2025): “AI to Drive 165% Increase in Data Center Power Demand by 2030” <a href="https://www.goldmansachs.com/insights/articles/ai-to-drive-165-increase-in-data-center-power-demand-by-2030">https://www.goldmansachs.com/insights/articles/ai-to-drive-165-increase-in-data-center-power-demand-by-2030</a></p>
+<p>Uptime Institute (July 2025): Global Data Center Survey 2025 <a href="https://uptimeinstitute.com/resources/research-and-reports/uptime-institute-global-data-center-survey-results-2025">https://uptimeinstitute.com/resources/research-and-reports/uptime-institute-global-data-center-survey-results-2025</a></p>
+<p>Uptime Institute Blog (May 2025): “Water is Local: Generalities Do Not Apply” <a href="https://journal.uptimeinstitute.com/water-is-local-generalities-do-not-apply/">https://journal.uptimeinstitute.com/water-is-local-generalities-do-not-apply/</a></p>
+<p><em>AI Compute Growth</em></p>
+<p>Stanford HAI (2025): AI Index Report 2025 <a href="https://aiindex.stanford.edu/report/">https://aiindex.stanford.edu/report/</a></p>
+<p>Epoch AI (January 2026): “Global AI Computing Capacity is Doubling Every 7 Months” <a href="https://epoch.ai/data-insights/ai-chip-production">https://epoch.ai/data-insights/ai-chip-production</a></p>
+<p>Epoch AI (January 2026): “Global AI Power Capacity is Now Comparable to Peak Power Usage of New York State” <a href="https://epoch.ai/data-insights/ai-datacenter-power">https://epoch.ai/data-insights/ai-datacenter-power</a></p>
+<p><em>Geopolitical Risk — AWS Middle East Strikes</em></p>
+<p>CNBC (March 2, 2026): “Amazon says drone strikes damaged 3 facilities in UAE and Bahrain” <a href="https://www.cnbc.com/2026/03/02/amazon-says-drone-strikes-damaged-3-facilities-in-uae-and-bahrain.html">https://www.cnbc.com/2026/03/02/amazon-says-drone-strikes-damaged-3-facilities-in-uae-and-bahrain.html</a></p>
+<p>CNBC (March 3, 2026): “Banking, payments services disrupted after Amazon UAE data centers hit in drone strikes” <a href="https://www.cnbc.com/2026/03/03/iran-war-uae-drone-strikes-aws-data-centers.html">https://www.cnbc.com/2026/03/03/iran-war-uae-drone-strikes-aws-data-centers.html</a></p>
+<p>CNBC (March 4, 2026): “Amazon’s Bahrain data center targeted by Iran for support of U.S. military, state media says” <a href="https://www.cnbc.com/2026/03/04/amazon-bahrain-data-centers-targeted-iran-drone-strike.html">https://www.cnbc.com/2026/03/04/amazon-bahrain-data-centers-targeted-iran-drone-strike.html</a></p>
+<p>Rest of World (March 2, 2026): “Amazon Fire in UAE: The End of the Gulf’s Safe AI Promise?” <a href="https://restofworld.org/2026/amazon-uae-data-center-fire-iran-strike/">https://restofworld.org/2026/amazon-uae-data-center-fire-iran-strike/</a></p>
+<p>Rest of World (March 4, 2026): “Iranian Strikes at Amazon Sites Raise Alarms” <a href="https://restofworld.org/2026/iran-amazon-data-center-strikes/">https://restofworld.org/2026/iran-amazon-data-center-strikes/</a></p>
+<p>Rest of World (March 5, 2026): “U.S.-Iran War Threatens Gulf AI Infrastructure as Both Data Chokepoints Close” <a href="https://restofworld.org/2026/us-iran-war-gulf-ai-submarine-cables/">https://restofworld.org/2026/us-iran-war-gulf-ai-submarine-cables/</a></p>
+<p>The Register (March 2, 2026): “AWS Says Drones Hit Two of Its Datacenters in UAE” <a href="https://www.theregister.com/2026/03/02/amazon_outages_middle_east/">https://www.theregister.com/2026/03/02/amazon_outages_middle_east/</a></p>
+<p>Fortune (March 3, 2026): “Iran’s Revenge: Drones Damage Data Centers for Amazon Web Services” <a href="https://fortune.com/2026/03/03/irans-revenge-drones-damage-data-centers-for-amazon-web-services-reveal-wests-achilles-heel/">https://fortune.com/2026/03/03/irans-revenge-drones-damage-data-centers-for-amazon-web-services-reveal-wests-achilles-heel/</a></p>
+<p>Bloomberg (March 3, 2026): “Drone Strikes Damage Amazon Data Centers in the UAE and Bahrain” <a href="https://www.bloomberg.com/news/articles/2026-03-03/drone-strikes-damage-amazon-data-centers-in-the-uae-and-bahrain">https://www.bloomberg.com/news/articles/2026-03-03/drone-strikes-damage-amazon-data-centers-in-the-uae-and-bahrain</a></p>
+<p>CBS News (March 2, 2026): “Amazon Says Drones Hit 3 of Its Middle East Data Centers Amid Iran Conflict” <a href="https://www.cbsnews.com/news/amazon-drone-strike-aws-data-center-uae-bahrain-iran/">https://www.cbsnews.com/news/amazon-drone-strike-aws-data-center-uae-bahrain-iran/</a></p>
+<p>DefenseScoop (March 3, 2026): “Commercial Data Centers Emerge as Targets in Modern Warfare After Drones Hit 3 AWS Facilities” <a href="https://defensescoop.com/2026/03/03/commercial-data-centers-drone-warfare-amazon-aws/">https://defensescoop.com/2026/03/03/commercial-data-centers-drone-warfare-amazon-aws/</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/ai/">AI</a></li>
+      <li><a href="http://localhost:1313/tags/cloud-computing/">Cloud Computing</a></li>
+      <li><a href="http://localhost:1313/tags/infrastructure/">Infrastructure</a></li>
+      <li><a href="http://localhost:1313/tags/depin/">DePIN</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">DGPC - Data Guardian &amp; Performance Consulting</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
