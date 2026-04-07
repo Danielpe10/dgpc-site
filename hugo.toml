@@ -6,7 +6,7 @@ theme = 'PaperMod'
     enabled = true
     title = "DGPC"
     subtitle = "Data Guardian & Performance Consulting"
-    imageUrl = "logo.png" 
+    imageUrl = "logo2.png" 
     [[params.profileMode.buttons]]
         name = "Blog"
         url = "posts"
