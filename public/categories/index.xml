@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on DGPC - Data Guardian &amp; Performance Consulting</title>
-    <link>https://dgpconsult.com/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on DGPC - Data Guardian &amp; Performance Consulting</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 06 Mar 2026 10:00:00 -0500</lastBuildDate>
-    <atom:link href="https://dgpconsult.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Consulting</title>
-      <link>https://dgpconsult.com/categories/consulting/</link>
+      <link>http://localhost:1313/categories/consulting/</link>
       <pubDate>Fri, 06 Mar 2026 10:00:00 -0500</pubDate>
-      <guid>https://dgpconsult.com/categories/consulting/</guid>
+      <guid>http://localhost:1313/categories/consulting/</guid>
       <description></description>
     </item>
     <item>
       <title>Tech Trends</title>
-      <link>https://dgpconsult.com/categories/tech-trends/</link>
+      <link>http://localhost:1313/categories/tech-trends/</link>
       <pubDate>Fri, 06 Mar 2026 10:00:00 -0500</pubDate>
-      <guid>https://dgpconsult.com/categories/tech-trends/</guid>
+      <guid>http://localhost:1313/categories/tech-trends/</guid>
       <description></description>
     </item>
   </channel>

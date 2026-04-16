@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>DePIN on DGPC - Data Guardian &amp; Performance Consulting</title>
-    <link>https://dgpconsult.com/tags/depin/</link>
+    <link>http://localhost:1313/tags/depin/</link>
     <description>Recent content in DePIN on DGPC - Data Guardian &amp; Performance Consulting</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 06 Mar 2026 10:00:00 -0500</lastBuildDate>
-    <atom:link href="https://dgpconsult.com/tags/depin/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/depin/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GPU Infrastructure Will Move to the Edge (Part 1)</title>
-      <link>https://dgpconsult.com/posts/gpu-infrastructure-move-to-the-edge-part-1/</link>
+      <link>http://localhost:1313/posts/gpu-infrastructure-move-to-the-edge-part-1/</link>
       <pubDate>Fri, 06 Mar 2026 10:00:00 -0500</pubDate>
-      <guid>https://dgpconsult.com/posts/gpu-infrastructure-move-to-the-edge-part-1/</guid>
+      <guid>http://localhost:1313/posts/gpu-infrastructure-move-to-the-edge-part-1/</guid>
       <description>By 2030, data centers are projected to require $6.7 trillion worldwide in capital expenditures yet this bet is hitting reality checks</description>
     </item>
   </channel>
