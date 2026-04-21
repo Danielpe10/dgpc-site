@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Casos De Estudio on DGPC - Data Guardian &amp; Performance Consulting</title>
+    <link>http://localhost:1313/tags/casos-de-estudio/</link>
+    <description>Recent content in Casos De Estudio on DGPC - Data Guardian &amp; Performance Consulting</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 16 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/casos-de-estudio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>De 2% a 100%: Cómo construimos Cortex-QA para operaciones BPO</title>
+      <link>http://localhost:1313/posts/case_study_dgpconsult/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/case_study_dgpconsult/</guid>
+      <description>Caso de estudio sobre la implementación de IA para auditoría masiva de tickets.</description>
+    </item>
+  </channel>
+</rss>

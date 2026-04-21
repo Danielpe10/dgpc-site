@@ -6,8 +6,29 @@
     <description>Recent content in Tags on DGPC - Data Guardian &amp; Performance Consulting</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Mar 2026 10:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BPO</title>
+      <link>http://localhost:1313/tags/bpo/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/bpo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cortex-QA</title>
+      <link>http://localhost:1313/tags/cortex-qa/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cortex-qa/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IA</title>
+      <link>http://localhost:1313/tags/ia/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ia/</guid>
+      <description></description>
+    </item>
     <item>
       <title>AI</title>
       <link>http://localhost:1313/tags/ai/</link>
@@ -34,6 +55,13 @@
       <link>http://localhost:1313/tags/infrastructure/</link>
       <pubDate>Fri, 06 Mar 2026 10:00:00 -0500</pubDate>
       <guid>http://localhost:1313/tags/infrastructure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Casos De Estudio</title>
+      <link>http://localhost:1313/tags/casos-de-estudio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/casos-de-estudio/</guid>
       <description></description>
     </item>
   </channel>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>2 to a 100 | DGPC - Data Guardian &amp; Performance Consulting</title>
+<meta name="keywords" content="IA, BPO, Cortex-QA">
+<meta name="description" content="Case Study: AI for BPO Quality Assurance.">
+<meta name="author" content="Daniel Peña">
+<link rel="canonical" href="http://localhost:1313/posts/case_study_dgpconsult/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.4ef2299ae814559c4055cd3d15919aff78737e44fa7af337c506246832ba458a.css" integrity="sha256-TvIpmugUVZxAVc09FZGa/3hzfkT6evM3xQYkaDK6RYo=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/case_study_dgpconsult/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="http://localhost:1313/posts/case_study_dgpconsult/">
+  <meta property="og:site_name" content="DGPC - Data Guardian & Performance Consulting">
+  <meta property="og:title" content="2 to a 100">
+  <meta property="og:description" content="Case Study: AI for BPO Quality Assurance.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-04-16T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-04-16T00:00:00+00:00">
+    <meta property="article:tag" content="IA">
+    <meta property="article:tag" content="BPO">
+    <meta property="article:tag" content="Cortex-QA">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="2 to a 100">
+  <meta name="twitter:description" content="Case Study: AI for BPO Quality Assurance.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://localhost:1313/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "2 to a 100",
+      "item": "http://localhost:1313/posts/case_study_dgpconsult/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "2 to a 100",
+  "name": "2 to a 100",
+  "description": "Case Study: AI for BPO Quality Assurance.",
+  "keywords": [
+    "IA", "BPO", "Cortex-QA"
+  ],
+  "articleBody": "Published by: Data Guardian \u0026 Performance Consulting (DGPC)\nCategory: AI Implementation | BPO Operations | Quality Assurance\nThe Problem: BPOs are facing monumental changes to their way of being, as automated tools become the norm, operations everywhere are embracing AI automations in order to augment the capabilities of their team.\nIn a BPO only agents generate revenue, everything else is a cost center, this is the reason that QA teams are usually understaffed, and overworked. Usually your QA team can only review a fraction of what your agents produce.\nIn a contact center handling 10,000 interactions per month, a typical QA team samples 2–5% of tickets.\nThat means 9800 of agent conversations go unreviewed.\nThe Solution: Cortex-QA is an automated audit engine that evaluates 100% of agent interactions using a Large Language Model (LLM) pipeline.\nRather than replacing human judgment, Cortex-QA scales it. The system applies the same evaluation criteria a senior QA analyst would use — empathy, technical resolution, protocol compliance — to every single ticket, automatically, with no marginal cost per review.\nIn the Cortex-QA framework, the Analyst is promoted from a “Ticket Grader” to a Quality Strategist.\nInstead of spending 40 hours a week manually reading individual transcripts to find a single coaching moment, analysts now oversee the entire operation’s health. They transition from the tedious “review” phase to high-value activities:\nTrend Orchestration: Identifying systemic failures across entire shifts or regions.\nTargeted Coaching: Spending time only with agents who show statistically significant gaps.\nProtocol Refinement: Using AI-generated insights to update training manuals and business logic.\nCortex-QA handles the audit volume, so the human team can focus on the human resolution.\nArchitecture: The core innovation behind Cortex-QA is what we call the Double-Pulse agentic loop — a two-step AI reasoning process that separates qualitative analysis from quantitative scoring.\nWhy two steps? A single prompt asking for both a narrative review and a structured score produces worse output on both dimensions. By separating reasoning from scoring, we give the model space to “think first, then grade” — the same cognitive pattern a skilled human reviewer follows.\nPulse 1 — Qualitative Reasoning The engine reads the full conversation thread and generates a concise analytical narrative (≤40 words):\n“The agent acknowledged the customer’s frustration and offered concrete diagnostic steps. Clear resolution path and professional tone throughout the interaction.”\nPulse 2 — Structured Scoring Using its own prior analysis as context, the model outputs a structured JSON score:\n{ \"empatia\": 4, \"resolucion\": 1, \"cumplimiento\": 1 } These two pulses run sequentially for each ticket, and the results are written to a persistent audit journal and a machine-readable results file — ready for dashboard integration in Looker Studio or Power BI.\nData Engineering: Corpus Quality as a First-Class Concern Before an AI can audit an agent, the system must audit the data. In any real-world BPO environment—whether using Zendesk, Salesforce, Genesys, or other tools —raw logs are messy, incomplete, or lack context.\nCortex-QA treats Data Quality as foundational. We implement a 7-stage “Integrity Gate” that ensures the LLM only evaluates interactions with enough signal to be meaningful. This prevents “hallucinated” failures and ensures the resulting KPIs are defensible to stakeholders.\nThe pipeline also reconstructs multi-turn conversation threads directly from the raw CSV, capturing up to 6 exchange turns per ticket rather than just the first customer–agent pair. This produces richer context for the LLM and more accurate empathy and resolution scores.\nThe result: high-quality tickets — a corpus where every entry has a specific, contextualized complaint, a substantive agent response, and enough conversational signal for meaningful AI evaluation.\nThis data engineering discipline is not an implementation detail — it is the core of the system. A QA auditor that scores garbage data produces garbage KPIs.\nCortex-QA treats corpus quality as a first-class engineering concern.\nResults \u0026 ROI Metric Before (Manual QA) After (Cortex-QA) Tickets reviewed per month ~200 (2% of 10,000) 10,000 (100%) Avg. time per review 8–12 minutes ~8 seconds Reviewer cost (per ticket) ~$1.50–$2.50 ~$0.002 (API cost) Coverage blind spot 98% 0% Feedback latency Days to weeks Real-time Compliance gap detection Reactive Proactive At 10,000 tickets per month, the cost delta is significant:\nManual QA at 2% coverage: ~$300–500/month for 200 reviews Cortex-QA at 100% coverage: ~$20/month in API costs That is 50x the coverage at a fraction of the cost — with no reviewer fatigue, no scheduling overhead, and no inconsistency between reviewers.\nBeyond Cost: Strategic Value The real ROI of Cortex-QA is not just cost reduction — it is the intelligence that 100% coverage unlocks:\nAgent coaching at scale. When every interaction is scored, managers can identify an agent’s specific pattern weaknesses rather than acting on anecdote.\nCompliance without anxiety. Industries with strict communication regulations (financial services, healthcare) can demonstrate documented, systematic review of every customer interaction.\nTrend detection. Aggregated scores across thousands of tickets reveal product issues, policy gaps, and seasonal complaint spikes before they surface in CSAT surveys.\nPerformance benchmarking. Objective, consistent scores across all agents and all shifts create a defensible basis for performance reviews and incentive structures.\nWhat’s Next DGPC is extending Cortex-QA with:\nBeyond individual audits, we are moving toward Context-Aware QA. By integrating RAG, Cortex-QA doesn’t just judge a ticket based on a general LLM ‘vibe’—it judges it against your company’s specific, proprietary internal knowledge base. Async batch processing to reduce 1,000-ticket audit time from ~2 hours to under 15 minutes Dashboard integration for real-time QA scorecards in Looker Studio Agent-level roll-up reports to feed directly into performance management workflows Work With Us If your operation is still auditing 2% of interactions and hoping the other 98% are fine — they probably aren’t.\nDGPC specializes in building AI infrastructure that makes BPO quality assurance scalable, defensible, and actionable. We work with operations teams to design, implement, and operationalize systems like Cortex-QA within your existing workflow.\nWe turn your Quality Assurance department from a bleeding cost center into a Strategic Intelligence unit.\nReady to close the coverage gap?\nContact DGPC →\nData Guardian \u0026 Performance Consulting | dgpconsult.com\n",
+  "wordCount" : "1004",
+  "inLanguage": "en",
+  "datePublished": "2026-04-16T00:00:00Z",
+  "dateModified": "2026-04-16T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Daniel Peña"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/posts/case_study_dgpconsult/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "DGPC - Data Guardian \u0026 Performance Consulting",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="DGPC - Data Guardian &amp; Performance Consulting (Alt + H)">DGPC - Data Guardian &amp; Performance Consulting</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      2 to a 100
+    </h1>
+    <div class="post-description">
+      Case Study: AI for BPO Quality Assurance.
+    </div>
+    <div class="post-meta"><span title='2026-04-16 00:00:00 +0000 UTC'>April 16, 2026</span>&nbsp;·&nbsp;<span>Daniel Peña</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p><strong>Published by:</strong> Data Guardian &amp; Performance Consulting (DGPC)<br>
+<strong>Category:</strong> AI Implementation | BPO Operations | Quality Assurance</p>
+<hr>
+<h2 id="the-problem">The Problem:<a hidden class="anchor" aria-hidden="true" href="#the-problem">#</a></h2>
+<p>BPOs are facing monumental changes to their way of being, as automated tools become the norm, operations everywhere are embracing AI automations in order to augment the capabilities of their team.</p>
+<p>In a BPO only agents generate revenue, everything else is a cost center, this is the reason that QA teams are usually understaffed, and overworked. Usually <strong>your QA team can only review a fraction of what your agents produce.</strong></p>
+<p>In a contact center handling <strong>10,000</strong> interactions per month, a typical QA team samples <strong>2–5% of tickets.</strong></p>
+<p><em>That means <strong>9800</strong> of agent conversations go unreviewed.</em></p>
+<p><img alt="The QA Blind Spot — 2% Manual QA vs 100% Cortex-QA" loading="lazy" src="/images/posts/cortexqa-coverage.png"></p>
+<hr>
+<h2 id="the-solution">The Solution:<a hidden class="anchor" aria-hidden="true" href="#the-solution">#</a></h2>
+<p><strong>Cortex-QA</strong> is an automated audit engine that evaluates 100% of agent interactions using a Large Language Model (LLM) pipeline.</p>
+<p>Rather than replacing human judgment, <strong>Cortex-QA scales it</strong>. The system applies the same evaluation criteria a senior QA analyst would use — empathy, technical resolution, protocol compliance — to every single ticket, automatically, with no marginal cost per review.</p>
+<p>In the <strong>Cortex-QA</strong> framework, the Analyst is promoted from a &ldquo;Ticket Grader&rdquo; to a <strong>Quality Strategist.</strong></p>
+<p>Instead of spending 40 hours a week manually reading individual transcripts to find a single coaching moment, analysts now oversee the entire operation&rsquo;s health. They transition from the tedious &ldquo;review&rdquo; phase to <strong>high-value activities:</strong></p>
+<ul>
+<li>
+<p><strong>Trend Orchestration:</strong> Identifying systemic failures across entire shifts or regions.</p>
+</li>
+<li>
+<p><strong>Targeted Coaching:</strong> Spending time only with agents who show statistically significant gaps.</p>
+</li>
+<li>
+<p><strong>Protocol Refinement:</strong> Using AI-generated insights to update training manuals and business logic.</p>
+</li>
+</ul>
+<p><strong>Cortex-QA</strong> handles the audit volume, so the human team can focus on the human resolution.</p>
+<hr>
+<h2 id="architecture">Architecture:<a hidden class="anchor" aria-hidden="true" href="#architecture">#</a></h2>
+<p>The core innovation behind <strong>Cortex-QA</strong> is what we call the <strong>Double-Pulse agentic loop</strong> — a two-step AI reasoning process that separates qualitative analysis from quantitative scoring.</p>
+<p><strong>Why two steps?</strong> A single prompt asking for both a narrative review and a structured score produces worse output on both dimensions. By separating reasoning from scoring, we give the model space to &ldquo;think first, then grade&rdquo; — the same cognitive pattern a skilled human reviewer follows.</p>
+<h3 id="pulse-1--qualitative-reasoning">Pulse 1 — Qualitative Reasoning<a hidden class="anchor" aria-hidden="true" href="#pulse-1--qualitative-reasoning">#</a></h3>
+<p>The engine reads the full conversation thread and generates a concise analytical narrative (≤40 words):</p>
+<blockquote>
+<p><em>&ldquo;The agent acknowledged the customer&rsquo;s frustration and offered concrete diagnostic steps. Clear resolution path and professional tone throughout the interaction.&rdquo;</em></p>
+</blockquote>
+<h3 id="pulse-2--structured-scoring">Pulse 2 — Structured Scoring<a hidden class="anchor" aria-hidden="true" href="#pulse-2--structured-scoring">#</a></h3>
+<p>Using its own prior analysis as context, the model outputs a structured JSON score:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;empatia&#34;</span>:      <span style="color:#ae81ff">4</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;resolucion&#34;</span>:   <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;cumplimiento&#34;</span>: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>These two pulses run sequentially for each ticket, and the results are written to a persistent audit journal and a machine-readable results file — ready for dashboard integration in Looker Studio or Power BI.</p>
+<p><img alt="Double-Pulse Architecture — How Cortex-QA reasons and scores" loading="lazy" src="/images/posts/cortexqa-doublepulse.svg"></p>
+<hr>
+<h2 id="data-engineering">Data Engineering:<a hidden class="anchor" aria-hidden="true" href="#data-engineering">#</a></h2>
+<h3 id="corpus-quality-as-a-first-class-concern">Corpus Quality as a First-Class Concern<a hidden class="anchor" aria-hidden="true" href="#corpus-quality-as-a-first-class-concern">#</a></h3>
+<p>Before an AI can audit an agent, the system must audit the data. In any real-world BPO environment—whether using Zendesk, Salesforce, Genesys, or other tools —raw logs are messy, incomplete, or lack context.</p>
+<p><strong>Cortex-QA</strong> treats Data Quality as foundational. We implement a 7-stage &ldquo;Integrity Gate&rdquo; that ensures the LLM only evaluates interactions with enough signal to be meaningful. This prevents &ldquo;hallucinated&rdquo; failures and ensures the resulting KPIs are defensible to stakeholders.</p>
+<p>The pipeline also reconstructs <strong>multi-turn conversation threads</strong> directly from the raw CSV, capturing up to 6 exchange turns per ticket rather than just the first customer–agent pair. This produces richer context for the LLM and more accurate empathy and resolution scores.</p>
+<p><strong>The result: high-quality tickets</strong> — a corpus where every entry has a specific, contextualized complaint, a substantive agent response, and enough conversational signal for meaningful AI evaluation.</p>
+<p>This data engineering discipline is not an implementation detail — it is the core of the system. A QA auditor that scores garbage data produces garbage KPIs.</p>
+<p><strong>Cortex-QA</strong> treats corpus quality as a first-class engineering concern.</p>
+<hr>
+<h2 id="results--roi">Results &amp; ROI<a hidden class="anchor" aria-hidden="true" href="#results--roi">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>Metric</th>
+          <th>Before (Manual QA)</th>
+          <th>After (Cortex-QA)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Tickets reviewed per month</td>
+          <td>~200 (2% of 10,000)</td>
+          <td>10,000 (100%)</td>
+      </tr>
+      <tr>
+          <td>Avg. time per review</td>
+          <td>8–12 minutes</td>
+          <td>~8 seconds</td>
+      </tr>
+      <tr>
+          <td>Reviewer cost (per ticket)</td>
+          <td>~$1.50–$2.50</td>
+          <td>~$0.002 (API cost)</td>
+      </tr>
+      <tr>
+          <td>Coverage blind spot</td>
+          <td>98%</td>
+          <td>0%</td>
+      </tr>
+      <tr>
+          <td>Feedback latency</td>
+          <td>Days to weeks</td>
+          <td>Real-time</td>
+      </tr>
+      <tr>
+          <td>Compliance gap detection</td>
+          <td>Reactive</td>
+          <td>Proactive</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>At 10,000 tickets per month, the cost delta is significant:</strong></p>
+<ul>
+<li>Manual QA at 2% coverage: ~$300–500/month for 200 reviews</li>
+<li>Cortex-QA at 100% coverage: ~$20/month in API costs</li>
+</ul>
+<p>That is <strong>50x the coverage at a fraction of the cost</strong> — with no reviewer fatigue, no scheduling overhead, and no inconsistency between reviewers.</p>
+<p><img alt="Cost vs Coverage — Manual QA vs Cortex-QA" loading="lazy" src="/images/posts/cortexqa-cost.svg"></p>
+<hr>
+<h2 id="beyond-cost-strategic-value">Beyond Cost: Strategic Value<a hidden class="anchor" aria-hidden="true" href="#beyond-cost-strategic-value">#</a></h2>
+<p>The real ROI of Cortex-QA is not just cost reduction — it is the intelligence that 100% coverage unlocks:</p>
+<p><strong>Agent coaching at scale.</strong> When every interaction is scored, managers can identify an agent&rsquo;s specific pattern weaknesses rather than acting on anecdote.</p>
+<p><strong>Compliance without anxiety.</strong> Industries with strict communication regulations (financial services, healthcare) can demonstrate documented, systematic review of every customer interaction.</p>
+<p><strong>Trend detection.</strong> Aggregated scores across thousands of tickets reveal product issues, policy gaps, and seasonal complaint spikes before they surface in CSAT surveys.</p>
+<p><strong>Performance benchmarking.</strong> Objective, consistent scores across all agents and all shifts create a defensible basis for performance reviews and incentive structures.</p>
+<hr>
+<h2 id="whats-next">What&rsquo;s Next<a hidden class="anchor" aria-hidden="true" href="#whats-next">#</a></h2>
+<p>DGPC is extending Cortex-QA with:</p>
+<ul>
+<li><strong>Beyond individual audits</strong>, we are moving toward Context-Aware QA. By integrating RAG, Cortex-QA doesn&rsquo;t just judge a ticket based on a general LLM &lsquo;vibe&rsquo;—it judges it against your company’s specific, proprietary internal knowledge base.</li>
+<li><strong>Async batch processing</strong> to reduce 1,000-ticket audit time from ~2 hours to under 15 minutes</li>
+<li><strong>Dashboard integration</strong> for real-time QA scorecards in Looker Studio</li>
+<li><strong>Agent-level roll-up reports</strong> to feed directly into performance management workflows</li>
+</ul>
+<hr>
+<h2 id="work-with-us">Work With Us<a hidden class="anchor" aria-hidden="true" href="#work-with-us">#</a></h2>
+<p>If your operation is still auditing 2% of interactions and hoping the other 98% are fine — <strong>they probably aren&rsquo;t.</strong></p>
+<p>DGPC specializes in building AI infrastructure that makes BPO quality assurance scalable, defensible, and actionable. We work with operations teams to design, implement, and operationalize systems like Cortex-QA within your existing workflow.</p>
+<p>We turn your Quality Assurance department from a bleeding cost center into a <strong>Strategic Intelligence unit.</strong></p>
+<p><strong>Ready to close the coverage gap?</strong></p>
+<p><a href="https://www.linkedin.com/in/daniel-gustavo-pe%C3%B1a-chaves-dgpc/">Contact DGPC →</a></p>
+<hr>
+<p><em>Data Guardian &amp; Performance Consulting | dgpconsult.com</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/ia/">IA</a></li>
+      <li><a href="http://localhost:1313/tags/bpo/">BPO</a></li>
+      <li><a href="http://localhost:1313/tags/cortex-qa/">Cortex-QA</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">DGPC - Data Guardian &amp; Performance Consulting</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

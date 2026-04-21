@@ -6,8 +6,15 @@
     <description>Recent content in Posts on DGPC - Data Guardian &amp; Performance Consulting</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Apr 2026 12:17:16 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2 to a 100</title>
+      <link>http://localhost:1313/posts/case_study_dgpconsult/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/case_study_dgpconsult/</guid>
+      <description>Case Study: AI for BPO Quality Assurance.</description>
+    </item>
     <item>
       <title>My First Post</title>
       <link>http://localhost:1313/posts/my-first-post/</link>
